@@ -1,0 +1,54 @@
+#include <windows.h>
+#include <gl/gl.h>
+#include "camera.h"
+
+#include <iostream>
+#include <cmath>
+
+struct SCamera camera = {-3.f, -12.f, 2.5, 450, 331};
+const float MOUSE_SENSITIVITY = 0.1f;
+
+void Camera_Apply() {
+    glRotatef(-camera.Xrot, 1, 0, 0);
+    glRotatef(-camera.Zrot, 0, 0, 1);
+    glTranslatef(-camera.x, -camera.y, -camera.z);
+}
+
+void Camera_Rotation(float xAngle, float zAngle) {
+    camera.Zrot += zAngle;
+    if (camera.Zrot < 0) camera.Zrot += 360;
+    if (camera.Zrot > 360) camera.Zrot -= 360;
+    camera.Xrot += xAngle;
+    if (camera.Xrot < 0) camera.Xrot += 360;
+    if (camera.Xrot > 360) camera.Xrot -= 360;
+}
+
+void Camera_AutoMoveByMouse(int centerX, int centerY) {
+    POINT cur;
+    POINT base = {centerX, centerY};
+    GetCursorPos(&cur);
+    Camera_Rotation((base.y - cur.y) * MOUSE_SENSITIVITY, (base.x - cur.x) * MOUSE_SENSITIVITY);
+    SetCursorPos(base.x, base.y);
+}
+
+void Camera_MoveDirectional(int forwardMove, int rightMove, float speed) {
+    float ugol = -camera.Zrot / 180 * M_PI;
+
+    if (forwardMove > 0)
+        ugol += rightMove > 0 ? M_PI_4 : (rightMove < 0 ? -M_PI_4 : 0);
+    if (forwardMove < 0)
+        ugol += M_PI + (rightMove > 0 ? -M_PI_4 : (rightMove < 0 ? M_PI_4 : 0));
+    if (forwardMove == 0) {
+        ugol += rightMove > 0 ? M_PI_2 : -M_PI_2;
+        if (rightMove == 0) speed = 0;
+    }
+
+    if (speed != 0) {
+        camera.x += sin(ugol) * speed;
+        camera.y += cos(ugol) * speed;
+    }
+}
+
+void Camera_MoveUpDown(float verticalMove, float speed) {
+    camera.z += verticalMove * speed;
+}

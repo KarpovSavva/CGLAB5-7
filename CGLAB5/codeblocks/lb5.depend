@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1713501696 source:c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\camera.cpp
+	<OpenGL/OpenGl.h>
+	<GLUT/GLUT.h>
+	<GL/gl.h>
+	"GL/freeglut.h"
+	"Camera.h"
+	"lens/OrthogonalLens.h"
+	<cmath>
+
+1713501686 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1713501686 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1713501686 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\gl\freeglut_ext.h
+	<stdarg.h>
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\camera.h
+	"Point.h"
+	"Viewport.h"
+	"Object.h"
+	"Lens.h"
+	"Transformable.h"
+	<vector>
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\point.h
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\viewport.h
+	"Point.h"
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\object.h
+	"Color.h"
+	"Point.h"
+	"Transformable.h"
+
+1713501737 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\color.h
+	<OpenGL/OpenGl.h>
+	<GLUT/GLUT.h>
+	<GL/gl.h>
+	"GL/freeglut.h"
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\transformable.h
+	"Point.h"
+	"Toggler.h"
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\toggler.h
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\lens.h
+	"Point.h"
+
+1713500974 c:\users\stud\desktop\Ўипицын\lb5\simplegl-master\lens\orthogonallens.h
+	"../Lens.h"
+
+1713503304 source:c:\users\stud\desktop\Ўипицын\lb5\main.cpp
+	<windows.h>
+	<gl/gl.h>
+	"camera.h"
+
+1674626872 source:c:\users\stud\desktop\Ўипицын\lb5\camera.cpp
+	<windows.h>
+	<gl/gl.h>
+	"camera.h"
+	<math.h>
+
+1674624946 c:\users\stud\desktop\Ўипицын\lb5\camera.h
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="objects" displayName="objects" projectFiles="true">
+        <itemPath>objects/Cone.cpp</itemPath>
+        <itemPath>objects/Cone.h</itemPath>
+        <itemPath>objects/Model.cpp</itemPath>
+        <itemPath>objects/Model.h</itemPath>
+        <itemPath>objects/Plane.cpp</itemPath>
+        <itemPath>objects/Plane.h</itemPath>
+        <itemPath>objects/Snowman.cpp</itemPath>
+        <itemPath>objects/Snowman.h</itemPath>
+        <itemPath>objects/Sphere.cpp</itemPath>
+        <itemPath>objects/Sphere.h</itemPath>
+        <itemPath>objects/Teapot.cpp</itemPath>
+        <itemPath>objects/Teapot.h</itemPath>
+        <itemPath>objects/Triangle.cpp</itemPath>
+        <itemPath>objects/Triangle.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="states" displayName="states" projectFiles="true">
+        <itemPath>states/BackgroundSelector.cpp</itemPath>
+        <itemPath>states/BackgroundSelector.h</itemPath>
+        <itemPath>states/TriangleSelector.cpp</itemPath>
+        <itemPath>states/TriangleSelector.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="tools" displayName="tools" projectFiles="true">
+        <itemPath>tools/MoveTool.cpp</itemPath>
+        <itemPath>tools/MoveTool.h</itemPath>
+        <itemPath>tools/RotationTool.cpp</itemPath>
+        <itemPath>tools/RotationTool.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="utils" displayName="utils" projectFiles="true">
+        <itemPath>/Users/hector0193/Proyectos/idi/Bloc3/simplegl/math.cpp</itemPath>
+        <itemPath>/Users/hector0193/Proyectos/idi/Bloc3/simplegl/utils/math.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="vendor" displayName="vendor" projectFiles="true">
+        <itemPath>vendor/ModelLoader.cpp</itemPath>
+        <itemPath>vendor/ModelLoader.h</itemPath>
+      </logicalFolder>
+      <itemPath>/Users/hector0193/Proyectos/idi/Bloc3/simplegl/Camera.cpp</itemPath>
+      <itemPath>/Users/hector0193/Proyectos/idi/Bloc3/simplegl/Camera.h</itemPath>
+      <itemPath>Color.cpp</itemPath>
+      <itemPath>Color.h</itemPath>
+      <itemPath>Engine.cpp</itemPath>
+      <itemPath>Engine.h</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>Object.cpp</itemPath>
+      <itemPath>Object.h</itemPath>
+      <itemPath>Point.cpp</itemPath>
+      <itemPath>Point.h</itemPath>
+      <itemPath>State.cpp</itemPath>
+      <itemPath>State.h</itemPath>
+      <itemPath>StateMachine.cpp</itemPath>
+      <itemPath>StateMachine.h</itemPath>
+      <itemPath>Tool.cpp</itemPath>
+      <itemPath>Tool.h</itemPath>
+      <itemPath>Viewport.cpp</itemPath>
+      <itemPath>Viewport.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/Users/hector0193/Proyectos/idi/Bloc3/simplegl</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <commandLine>-framework OpenGL -framework GLUT</commandLine>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
