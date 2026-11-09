@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1765260120 source:c:\users\1\documents\github\cglab5-7\cglab7\camera.cpp
+	<windows.h>
+	<gl/gl.h>
+	"camera.h"
+	<iostream>
+	<cmath>
+
+1765260120 c:\users\1\documents\github\cglab5-7\cglab7\camera.h
+
+1765260120 source:c:\users\1\documents\github\cglab5-7\cglab7\main.cpp
+	<cmath>
+	<iostream>
+	<cstdio>
+	<windows.h>
+	<gl/gl.h>
+	<gl/glu.h>
+	"camera.h"
+
